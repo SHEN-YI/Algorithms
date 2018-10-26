@@ -11,6 +11,7 @@ lsystem_colours=["brown", "lime green" ]
 
 starting_position=(0,-250)
 starting_angle=90
+#animation_timing means the the time interval between two showing iterations
 animation_timing = 2
 
 operation_dict={}
@@ -52,7 +53,7 @@ def drawing(action_string):
 
 iteration_dict={k:v for k,v in lsystem_rules}
 def _iteration(cur_string):
-    
+
     for i in range(lsystem_iterations):
         last_string=''
         for k in cur_string:
